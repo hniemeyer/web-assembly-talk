@@ -1,0 +1,1 @@
+/home/hniemeyer/src/wasm/accu2020example_rust/target/wasm32-unknown-unknown/release/libaccu2020example.rlib: /home/hniemeyer/src/wasm/accu2020example_rust/src/lib.rs /home/hniemeyer/src/wasm/accu2020example_rust/src/utils.rs
