@@ -27,6 +27,7 @@ and freestanding WebAssembly for running with a wasm-runtime directly on the mac
 Dependencies:
 * [Emscripten](https://emscripten.org/)
 * [Wasmer](https://wasmer.io/) for running the freestanding WebAssembly example outside of the browser
+* Python for running the web server (can be exchanged easily for any web server you want)
 
 Usage:
 * compile.sh will compile the C++ code to wasm.
