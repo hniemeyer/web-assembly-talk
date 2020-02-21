@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello ACCU2020</title>
+
+    <style>
+      body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 180px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+    <pre id="my-canvas"></pre>
+
+
+<script type="module">
+  async function init() {
+    const { instance } = await WebAssembly.instantiateStreaming(
+      fetch("./add.wasm")
+    );
+    console.log(instance.exports._Z3addii(4, 1));
+    const pre = document.getElementById("my-canvas");
+    pre.textContent = instance.exports._Z3addii(4, 1)
+
+  }
+  init();
+</script>
+
+</body>
+</html>
