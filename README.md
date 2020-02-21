@@ -12,6 +12,13 @@ Compiling C++ to WebAssembly using just clang.
 
 Dependencies:
 * clang compiler
+* Python for running the web server (can be exchanged easily for any web server you want)
+* [wasm2wat](https://github.com/WebAssembly/wabt) if you want to decompile the wasm file to human readable WAT (WebAssemblyText) yourself 
+
+Usage:
+* compile.sh will compile the C++ to wasm.
+* run.sh will start a web server on port 9000 using pythons http.server (then you can go to localhost:9000/index.html)
+
 
 ### cpp-emscripten
 
