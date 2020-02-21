@@ -16,9 +16,8 @@ Dependencies:
 * [wasm2wat](https://github.com/WebAssembly/wabt) if you want to decompile the wasm file to human readable WAT (WebAssemblyText) yourself 
 
 Usage:
-* compile.sh will compile the C++ to wasm.
+* compile.sh will compile the C++ code to wasm.
 * run.sh will start a web server on port 9000 using pythons http.server (then you can go to localhost:9000/index.html)
-
 
 ### cpp-emscripten
 
@@ -28,6 +27,11 @@ and freestanding WebAssembly for running with a wasm-runtime directly on the mac
 Dependencies:
 * [Emscripten](https://emscripten.org/)
 * [Wasmer](https://wasmer.io/) for running the freestanding WebAssembly example outside of the browser
+
+Usage:
+* compile.sh will compile the C++ code to wasm.
+* start.sh will start a web server on port 9000 using pythons http.server (then you can go to localhost:9000/hello.html)
+* run_standalone.sh will run the freestanding wasm example using the wasmer runtime
 
 ### rust
 
