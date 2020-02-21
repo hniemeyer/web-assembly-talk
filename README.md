@@ -43,6 +43,9 @@ Dependencies:
 * [NodeJS](https://nodejs.org/en/)
 * [wasm-pack](https://rustwasm.github.io/wasm-pack/)
 
+Usage:
+* build_run.sh will compile the Rust code to wasm and start a webserver on port 8080 (then you can go to localhost:8080)
+
 ## Slides
 
 The folder slides contains the presentation as a PDF.
