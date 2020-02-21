@@ -15,7 +15,7 @@ Dependencies:
 
 ### cpp-emscripten
 
-Compiling C++ to WebAssembly using emscripten. Both WebAssembly embedded in a HTML webpage
+Compiling C++ to WebAssembly using emscripten. Both WebAssembly embedded in a HTML webpage for running inside the browser
 and freestanding WebAssembly for running with a wasm-runtime directly on the machine are generated.
 
 Dependencies:
